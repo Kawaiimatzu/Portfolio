@@ -1922,7 +1922,7 @@ img{
 .hero-content{
 
   animation:
-  breathe 6s ease-in-out infinite;
+  breathe 2s ease-in-out infinite;
 }
 
 @keyframes breathe{
