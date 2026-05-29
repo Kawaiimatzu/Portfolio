@@ -84,36 +84,6 @@ window.addEventListener("scroll", () => {
 });
 
 /* =========================
-   FLOATING LIGHT PARTICLES
-========================= */
-
-const aboutBox =
-document.querySelector(".about-box");
-
-for(let i = 0; i < 18; i++){
-
-  const light =
-  document.createElement("span");
-
-  light.classList.add("floating-light");
-
-  light.style.left =
-  Math.random() * 100 + "%";
-
-  light.style.top =
-  Math.random() * 100 + "%";
-
-  light.style.animationDelay =
-  Math.random() * 6 + "s";
-
-  light.style.animationDuration =
-  4 + Math.random() * 6 + "s";
-
-  aboutBox.appendChild(light);
-
-}
-
-/* =========================
    STATS COUNT ANIMATION
 ========================= */
 
@@ -169,3 +139,69 @@ counters.forEach(counter => {
   animate();
 
 });
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navMenu =
+document.getElementById("navMenu");
+
+menuBtn.addEventListener("click",()=>{
+
+  navMenu.classList.toggle("active");
+
+});
+
+/* AUTO CLOSE */
+
+document
+.querySelectorAll("#navMenu a")
+.forEach(link=>{
+
+  link.addEventListener("click",()=>{
+
+    navMenu.classList.remove("active");
+
+  });
+
+});
+
+window.addEventListener("load",()=>{
+
+  const loader =
+  document.getElementById("loader");
+
+  loader.style.opacity = "0";
+
+  setTimeout(()=>{
+
+    loader.style.display = "none";
+
+  },600);
+
+});
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+  reveals.forEach(item=>{
+
+    const top =
+    item.getBoundingClientRect().top;
+
+    if(top < window.innerHeight - 100){
+
+      item.classList.add("active");
+
+    }
+
+  });
+
+});
+

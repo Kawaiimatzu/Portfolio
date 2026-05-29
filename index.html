@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Luxury Real Estate Portfolio</title>
+  <meta name="description" content="CapitalHires provides premium real estate virtual assistants, website design, social media management, branding, and digital marketing solutions.">
+
+<meta name="keywords" content="Real Estate Virtual Assistant, Real Estate VA, Social Media Manager, Website Design, CapitalHires">
+
+<meta property="og:title" content="CapitalHires | Premium Real Estate Virtual Assistants">
+
+<meta property="og:description" content="Helping real estate professionals grow with premium virtual assistant and digital marketing services.">
+
+<meta property="og:image" content="images/logo.jpg">
+
+<meta property="og:type" content="website">
 
   <link rel="stylesheet" href="style.css">
 
@@ -13,16 +24,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
 
 </head>
 <body>
+  <div id="loader">
+
+  <div class="loader-content">
+
+    <img src="images/logo.jpg" alt="Logo">
+
+    <h2>CAPITALHIRES</h2>
+
+    <p>Loading...</p>
+
+  </div>
+
+</div>
 
   <!-- NAVBAR -->
   <header class="navbar">
 
-<div class="logo">
+<a href="#home" class="logo">
 
-  <img src="images/logo.webp" alt="CapitalHires Logo">
+  <img src="images/logo.jpg" alt="CapitalHires Logo">
 
   <div class="logo-text">
 
@@ -34,27 +59,41 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   </div>
 
-</div>
+</a>
 
 <div class="nav-right">
 
-<nav>
+<nav id="navMenu">
 
   <a href="#home">Home</a>
-
   <a href="#projects">Projects</a>
-
   <a href="#services">Services</a>
-
   <a href="#about">About</a>
-
   <a href="#contact">Contact</a>
+
+<a href="https://calendly.com/capitalhires/30min"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="mobile-talk">
+
+  Let's Talk
+
+</a>
 
 </nav>
 
-  <button class="nav-btn">
-    Let's Talk
-  </button>
+  <div class="menu-btn" id="menuBtn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+<a href="https://calendly.com/capitalhires/30min"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="nav-btn">
+
+  Let's Talk
+
+</a>
 
 </div>
 
@@ -122,8 +161,273 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   </section>
 
+  <!-- SERVICES -->
+
+<section class="services-section reveal" id="services">
+
+  <div class="section-header center">
+
+    <div>
+
+      <span>OUR SERVICES</span>
+
+      <h2>What We Do Best</h2>
+
+      <p>
+        Premium digital solutions designed to help real estate
+        professionals grow their brand and generate more leads.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-globe"></i>
+
+      <h3>Website Design</h3>
+
+      <p>
+        Modern high-converting websites crafted for real estate brands.
+      </p>
+
+    </div>
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-hashtag"></i>
+
+      <h3>Social Media</h3>
+
+      <p>
+        Professional social media content and branding that builds trust.
+      </p>
+
+    </div>
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-pen-ruler"></i>
+
+      <h3>Graphic Design</h3>
+
+      <p>
+        Premium flyers, brochures, banners, and marketing materials.
+      </p>
+
+    </div>
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-video"></i>
+
+      <h3>Commercial Videos</h3>
+
+      <p>
+        Eye-catching promotional videos that showcase your business.
+      </p>
+
+    </div>
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-headset"></i>
+
+      <h3>Virtual Assistants</h3>
+
+      <p>
+        Dedicated real estate virtual assistants to support your growth.
+      </p>
+
+    </div>
+
+    <div class="service-card">
+
+      <i class="fa-solid fa-chart-line"></i>
+
+      <h3>Brand Strategy</h3>
+
+      <p>
+        Build a powerful online presence that attracts quality clients.
+      </p>
+
+    </div>
+
+  </div>
+
+  </section>
+
+     <!-- ABOUT -->
+
+<section class="about-section reveal" id="about">
+
+  <div class="about-center">
+
+    <span>ABOUT CAPITALHIRES</span>
+
+    <h2>
+      We Create Premium Digital
+      Experiences For Real Estate Brands.
+    </h2>
+
+    <p>
+      CAPITALHIRES is a luxury digital portfolio focused on helping
+      real estate professionals and modern businesses build a powerful
+      online presence.
+    </p>
+
+    <p>
+      We specialize in premium website design, social media branding,
+      flyer designs, commercials, and high-converting digital
+      experiences crafted with a bold and modern corporate style.
+    </p>
+
+    <div class="about-stats">
+
+      <div class="about-box">
+        <h3 data-count="50">0</h3>
+        <span>Projects Completed</span>
+      </div>
+
+      <div class="about-box">
+        <h3 data-count="100">0</h3>
+        <span>Responsive Design</span>
+      </div>
+
+      <div class="about-box">
+        <h3 data-count="24">0</h3>
+        <span>Client Support</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- TESTIMONIALS -->
+
+
+
+<section class="testimonial-section reveal">
+
+  <div class="section-header center">
+
+    <div>
+
+      <span>WHY CHOOSE US</span>
+
+      <h2>
+        Trusted By Real Estate Professionals
+      </h2>
+
+      <p>
+        Real feedback from clients we support every day.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="testimonial-grid">
+
+    <!-- TESTIMONIAL 1 -->
+
+    <div class="testimonial-card">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p>
+        “I was first hesitant about hiring an offshore appointment setter through CapitalHires,
+        but I'm really glad I did. It's been very cost-effective and my calendar is now
+        consistently filled with solid appointments.”
+      </p>
+
+      <div class="client-info">
+
+        <img src="images/dakota.png" alt="Dakota Gooch">
+
+        <div>
+
+          <h4>DAKOTA GOOCH</h4>
+
+          <span>Senior Loan Officer</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TESTIMONIAL 2 -->
+
+    <div class="testimonial-card">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p>
+        “As a broker, I needed help staying consistent with my social media and keeping my CRM
+        pipeline organized. They handled both seamlessly and now my operations are much more efficient.”
+      </p>
+
+      <div class="client-info">
+
+        <img src="images/paul.jpg" alt="Paul Anderson">
+
+        <div>
+
+          <h4>PAUL ANDERSON</h4>
+
+          <span>Commercial Lender</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TESTIMONIAL 3 -->
+
+    <div class="testimonial-card">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <p>
+        “I have relied on the team at CapitalHires for urgent operational tasks and they consistently
+        deliver dependable assistance even under pressure.”
+      </p>
+
+      <div class="client-info">
+
+        <img src="images/nathaniel.jpg" alt="Nathaniel Bittman">
+
+        <div>
+
+          <h4>NATHANIEL BITTMAN</h4>
+
+          <span>Mortgage Professional</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
   <!-- PROJECTS -->
-  <section class="projects" id="projects">
+  <section class="projects reveal" id="projects">
 
     <div class="section-header">
 
@@ -328,56 +632,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   </section>
 
-   <!-- ABOUT -->
-
-<section class="about-section" id="about">
-
-  <div class="about-center">
-
-    <span>ABOUT CAPITALHIRES</span>
-
-    <h2>
-      We Create Premium Digital
-      Experiences For Real Estate Brands.
-    </h2>
-
-    <p>
-      CAPITALHIRES is a luxury digital portfolio focused on helping
-      real estate professionals and modern businesses build a powerful
-      online presence.
-    </p>
-
-    <p>
-      We specialize in premium website design, social media branding,
-      flyer designs, commercials, and high-converting digital
-      experiences crafted with a bold and modern corporate style.
-    </p>
-
-    <div class="about-stats">
-
-      <div class="about-box">
-        <h3 data-count="50">0</h3>
-        <span>Projects Completed</span>
-      </div>
-
-      <div class="about-box">
-        <h3 data-count="100">0</h3>
-        <span>Responsive Design</span>
-      </div>
-
-      <div class="about-box">
-        <h3 data-count="24">0</h3>
-        <span>Client Support</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
   <!-- CONTACT -->
-<section class="contact-section" id="contact">
+<section class="contact-section reveal" id="contact">
 
     <div class="contact-left">
 
@@ -417,7 +673,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   <div class="footer-logo">
 
-    <img src="images/logo.webp" alt="CapitalHires Logo">
+    <img src="images/logo.jpg" alt="CapitalHires Logo">
 
     <h2>CAPITALHIRES</h2>
 
@@ -429,11 +685,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   <div class="footer-socials">
 
-<a href="https://facebook.com" target="_blank">
+<a href="https://www.facebook.com/people/CapitalHires/61570972498811/" target="_blank">
   <i class="fa-brands fa-facebook-f"></i>
 </a>
 
-<a href="https://linkedin.com" target="_blank">
+<a href="https://www.linkedin.com/company/capitalhires/" target="_blank">
   <i class="fa-brands fa-linkedin-in"></i>
 </a>
 
